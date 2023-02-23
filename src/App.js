@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
-import ExpenseItem from "./components/ExpenseItem";
+import ExpenseItem from "./components/expense/ExpenseItem";
+import Card from "./components/UI/Card";
 
 function App() {
   const expanses = [
@@ -10,7 +11,7 @@ function App() {
     { title: "labour charge", amount: 1000.3, date: new Date(2023, 9, 12) },
   ];
   return (
-    <div className="App">
+    <Card className="App">
       <ExpenseItem
         title={expanses[0].title}
         amount={expanses[0].amount}
@@ -31,7 +32,7 @@ function App() {
         amount={expanses[3].amount}
         date={expanses[3].date}
       ></ExpenseItem>
-    </div>
+    </Card>
   );
 }
 

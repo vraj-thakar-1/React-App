@@ -20,7 +20,7 @@ const initialExp = [
     id: "e3",
     title: "Light bill",
     amount: 200.3,
-    date: new Date(2023, 12, 21),
+    date: new Date(2023, 10, 21),
   },
   {
     id: "e4",
